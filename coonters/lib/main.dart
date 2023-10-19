@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   int one = 1;
   int two = 2;
   int three = 3;
-  int four = 4;
+  int four = 5;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
                         FloatingActionButton.extended(
                           backgroundColor: Color.fromARGB(255, 163, 120, 218),
                           onPressed: () {
-                            setState(() => one++);
+                            setState(() => one+=1);
                           },
                           label: const Text('Aumentar'),
                         ),
@@ -67,7 +67,7 @@ class _MyAppState extends State<MyApp> {
                         FloatingActionButton.extended(
                           backgroundColor: Color.fromARGB(255, 163, 120, 218),
                           onPressed: () {
-                            setState(() => two++);
+                            setState(() => two+=2);
                           },
                           label: const Text('Aumentar'),
                         ),
@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp> {
                         FloatingActionButton.extended(
                           backgroundColor: Color.fromARGB(255, 163, 120, 218),
                           onPressed: () {
-                            setState(() => three++);
+                            setState(() => three+=3);
                           },
                           label: const Text('Aumentar'),
                         ),
@@ -116,7 +116,7 @@ class _MyAppState extends State<MyApp> {
                         FloatingActionButton.extended(
                           backgroundColor: Color.fromARGB(255, 163, 120, 218),
                           onPressed: () {
-                            setState(() => four++);
+                            setState(() => four+=5);
                           },
                           label: const Text('Aumentar'),
                         ),
@@ -138,7 +138,7 @@ class _MyAppState extends State<MyApp> {
                     one = 1,
                     two = 2,
                     three = 3,
-                    four = 4,
+                    four = 5,
                   });
             },
             label: const Text('Reset'),
